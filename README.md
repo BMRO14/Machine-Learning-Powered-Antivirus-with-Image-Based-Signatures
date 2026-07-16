@@ -8,8 +8,8 @@ The system can classify files as **malware** or **benign**, and also supports fa
 1. The user selects a file.
 2. The system reads the PE structure and extracts static information.
 3. Entropy is calculated and converted into an RGB image-like signature.
-4. A Random Forest model analyzes the features.
-5. The app returns a prediction with confidence.
+4. Two Random Forest models analyze the features.
+5. The app returns a double prediction with confidence (Malware vs. Benign / Family attribution).
 
 ## Main Features
 

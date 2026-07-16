@@ -12,7 +12,7 @@ SAMPLES_PER_CATEGORY = 500
 PER_TAG_LIMIT = 100            
 SEVENZIP = r"C:\Program Files\7-Zip\7z.exe" 
 
-AUTH_KEY = "YOUR_API_KEY_HERE"
+AUTH_KEY = "API_KEY_HERE"
 HEADERS = {"Auth-Key": AUTH_KEY}
 
 CATEGORIES = {
@@ -179,7 +179,7 @@ for category, tags in CATEGORIES.items():
 
     print(f"  Done: {collected} files in '{out_dir}'")
 
-print("\n[✓] Complete. Dataset structure:")
+print("\nComplete. Dataset structure:")
 for cat in CATEGORIES:
     p = os.path.join(BASE_DIR, cat)
     n = len(os.listdir(p)) if os.path.exists(p) else 0
